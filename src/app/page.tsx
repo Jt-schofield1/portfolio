@@ -53,6 +53,7 @@ import {
   SiEslint,
   SiPrettier,
   SiR,
+  SiTiktok,
 } from "react-icons/si";
 import { FaRobot, FaServer, FaMobile, FaCode, FaLaptopCode, FaCloud } from "react-icons/fa";
 
@@ -478,6 +479,9 @@ export default function Portfolio() {
                   <a href="https://www.linkedin.com/in/james-schofield-49260b293" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors">
                     <Linkedin className="w-5 h-5" />
                   </a>
+                  <a href="https://www.tiktok.com/@jt_schofield?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors" title="TikTok">
+                    <SiTiktok className="w-5 h-5" />
+                  </a>
                   <a href="https://beacons.ai/jt_schofield" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors" title="Beacons Profile">
                     <Link className="w-5 h-5" />
                   </a>
@@ -535,6 +539,9 @@ export default function Portfolio() {
                 </a>
                 <a href="https://www.linkedin.com/in/james-schofield-49260b293" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors">
                   <Linkedin className="w-5 h-5" />
+                </a>
+                <a href="https://www.tiktok.com/@jt_schofield?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors" title="TikTok">
+                  <SiTiktok className="w-5 h-5" />
                 </a>
                 <a href="https://beacons.ai/jt_schofield" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors" title="Beacons Profile">
                   <Link className="w-5 h-5" />
@@ -1041,6 +1048,13 @@ export default function Portfolio() {
                     <p className="text-gray-600">github.com/Jt-schofield1</p>
                   </div>
                 </div>
+                <div className="flex items-center space-x-4">
+                  <SiTiktok className="w-6 h-6 text-black" />
+                  <div>
+                    <p className="font-semibold">TikTok</p>
+                    <p className="text-gray-600">@jt_schofield</p>
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -1123,6 +1137,9 @@ export default function Portfolio() {
               </a>
               <a href="https://www.linkedin.com/in/james-schofield-49260b293" className="text-gray-300 hover:text-white transition-colors">
                 <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="https://www.tiktok.com/@jt_schofield?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors" title="TikTok">
+                <SiTiktok className="w-5 h-5" />
               </a>
               <a href="https://beacons.ai/jt_schofield" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors" title="Beacons Profile">
                 <Link className="w-5 h-5" />
