@@ -19,6 +19,7 @@ import {
   Star,
   Zap,
   Sparkles,
+  Link,
 } from "lucide-react";
 import Image from "next/image";
 // Tech Icons from react-icons
@@ -477,6 +478,9 @@ export default function Portfolio() {
                   <a href="https://www.linkedin.com/in/james-schofield-49260b293" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors">
                     <Linkedin className="w-5 h-5" />
                   </a>
+                  <a href="https://beacons.ai/jt_schofield" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors" title="Beacons Profile">
+                    <Link className="w-5 h-5" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -531,6 +535,9 @@ export default function Portfolio() {
                 </a>
                 <a href="https://www.linkedin.com/in/james-schofield-49260b293" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors">
                   <Linkedin className="w-5 h-5" />
+                </a>
+                <a href="https://beacons.ai/jt_schofield" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors" title="Beacons Profile">
+                  <Link className="w-5 h-5" />
                 </a>
               </div>
             </div>
@@ -853,20 +860,37 @@ export default function Portfolio() {
                   <div className="absolute bottom-8 right-12 w-2 h-2 bg-white/35 rounded-full animate-ping delay-700"></div>
                   
                   {/* Interactive Category Badge */}
-                  <div className="absolute top-6 right-6 px-4 py-2 bg-black/80 backdrop-blur-md rounded-full text-white text-sm font-medium border border-white/40 group-hover:bg-black/90 transition-all duration-300 shadow-lg">
-                    {project.category}
+                  <div className="absolute top-6 right-3 sm:right-6 px-2 sm:px-4 py-1 sm:py-2 bg-black/80 backdrop-blur-md rounded-full text-white text-xs sm:text-sm font-medium border border-white/40 group-hover:bg-black/90 transition-all duration-300 shadow-lg">
+                    <span className="hidden sm:inline">{project.category}</span>
+                    <span className="sm:hidden">
+                      {project.category === 'Business Website' ? 'Business' :
+                       project.category === 'FinTech' ? 'FinTech' :
+                       project.category === 'Business App' ? 'App' :
+                       project.category === 'AI/Automation' ? 'AI' :
+                       project.category === 'Mobile App' ? 'Mobile' :
+                       project.category === 'Frontend' ? 'Frontend' :
+                       project.category === 'Web App' ? 'Web' :
+                       project.category}
+                    </span>
                   </div>
                   
                   {/* Enhanced Status Badge */}
-                  <div className={`absolute top-6 left-6 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-md border transition-all duration-300 shadow-lg ${
+                  <div className={`absolute top-6 left-3 sm:left-6 px-2 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-medium backdrop-blur-md border transition-all duration-300 shadow-lg ${
                     project.status === 'Live' ? 'bg-green-600/90 text-white border-green-400/60 group-hover:bg-green-600' :
                     project.status === 'In Progress' ? 'bg-amber-500/90 text-white border-amber-400/60 group-hover:bg-amber-500' :
                     'bg-blue-600/90 text-white border-blue-400/60 group-hover:bg-blue-600'
                   }`}>
-                    {project.status === 'Live' && '🟢'} 
-                    {project.status === 'In Progress' && '🟡'} 
-                    {project.status === 'Completed' && '✅'} 
-                    {project.status}
+                    <span className="flex items-center">
+                      <span className="mr-1">
+                        {project.status === 'Live' && '🟢'} 
+                        {project.status === 'In Progress' && '🟡'} 
+                        {project.status === 'Completed' && '✅'} 
+                      </span>
+                      <span className="hidden sm:inline">{project.status}</span>
+                      <span className="sm:hidden">
+                        {project.status === 'In Progress' ? 'Progress' : project.status}
+                      </span>
+                    </span>
                   </div>
                   
                   {/* Enhanced Hover Overlay with Better Actions */}
@@ -1099,6 +1123,9 @@ export default function Portfolio() {
               </a>
               <a href="https://www.linkedin.com/in/james-schofield-49260b293" className="text-gray-300 hover:text-white transition-colors">
                 <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="https://beacons.ai/jt_schofield" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors" title="Beacons Profile">
+                <Link className="w-5 h-5" />
               </a>
             </div>
           </div>

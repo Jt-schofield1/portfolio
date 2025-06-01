@@ -175,6 +175,32 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
+  /* Mobile badge responsiveness */
+  @media (max-width: 640px) {
+    .project-card .absolute.top-6.left-3 {
+      left: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .project-card .absolute.top-6.right-3 {
+      right: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Ensure badges don't overlap on very small screens */
+    .project-card .absolute.top-6 {
+      min-width: fit-content;
+      white-space: nowrap;
+    }
+    
+    /* Stack badges vertically on ultra-small screens if needed */
+    @media (max-width: 380px) {
+      .project-card .absolute.top-6.right-3 {
+        top: 3.5rem; /* Move category badge down on very small screens */
+      }
+    }
+  }
+  
   /* Badge hover effects */
   .project-card:hover .absolute.top-6 {
     transform: translateY(-1px);
