@@ -84,6 +84,18 @@ const projects = [
     featured: false,
   },
   {
+    title: "SmartBooks - Invoice & Tax Assistant PWA",
+    description: "A modern, offline-first Progressive Web App built with React + TypeScript for solo-entrepreneurs and small teams to manage invoices, track expenses, and prepare tax summaries with automated calculations.",
+    category: "Business App",
+    status: "Completed",
+    gradient: "from-emerald-600 to-blue-600",
+    image: "/images/projects/smartbook.png",
+    technologies: ["React", "TypeScript", "PWA", "IndexedDB", "Vite", "Zustand"],
+    liveLink: undefined,
+    githubLink: "https://github.com/Jt-schofield1/Tax-Smartbook",
+    featured: false,
+  },
+  {
     title: "Financial Advisor Web App",
     description: "A professional web application designed to showcase financial advisory services with appointment booking functionality using FormSpree API integration for seamless client communication.",
     category: "Business App",
