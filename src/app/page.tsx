@@ -955,7 +955,7 @@ export default function Portfolio() {
                   <h3 className="font-bold text-2xl mb-4 text-gray-900 group-hover:text-black transition-colors line-clamp-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed text-sm line-clamp-3 group-hover:text-gray-700 transition-colors">
+                  <p className="text-gray-600 mb-6 leading-relaxed text-sm group-hover:text-gray-700 transition-colors">
                     {project.description}
                   </p>
                   
