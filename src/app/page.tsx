@@ -262,7 +262,7 @@ const services = [
   {
     icon: <Wrench className="w-8 h-8" />,
     title: "Cybersecurity & Secure Development",
-    description: "Implementing security-first development practices with my military cryptologic background, ensuring applications are built with robust security from the ground up."
+    description: "Implementing security-first development practices with my military cryptologic and college background, ensuring applications are built with robust security from the ground up."
   },
   {
     icon: <Palette className="w-8 h-8" />,
@@ -575,13 +575,13 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-gray-600 leading-relaxed">
-                I&apos;m JT Schofield, an aspiring full stack web developer with a solid foundation in cybersecurity and data science. I graduated from Mercyhurst University with a Bachelor&apos;s degree in Cyber Security and a Minor in Data Science. Currently, I&apos;m expanding my skills through ERA Solutions&apos; full stack development courses, and I thrive on building polished web applications that merge user experience with secure coding practices.
+                I&apos;m JT Schofield, a full stack web developer with a strong background in cybersecurity and data science. I hold a Bachelor&apos;s degree in Cyber Security with a Minor in Data Science from Mercyhurst University and have completed advanced full stack development training through ERA Solutions. My expertise lies in building secure, scalable web applications that blend intuitive user experiences with best-in-class coding practices.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                During my time as a Cryptologic Technician in the Navy, I developed a keen attention to detail, adaptability, and problem-solving mindset—traits I bring to every coding project. From crafting dynamic React dashboards for real-time market insights to designing custom chatbots, I&apos;m passionate about delivering clean, efficient solutions that prioritize both performance and security.
+                As a former Cryptologic Technician in the U.S. Navy, I honed a detail-oriented mindset and a problem-solving approach under high-pressure environments—skills that directly translate to my work in software development. I&apos;ve led projects ranging from dynamic React dashboards for real-time financial analysis to custom chatbot integrations using Python and OpenAI, always with a focus on performance, security, and maintainability.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Right now, I&apos;m developing a social networking app focused on meaningful professional connections, reimagining how people in the industry collaborate and engage. I love translating big ideas into intuitive digital experiences, and I&apos;m excited to tackle the next challenge that comes my way!
+                Currently, I&apos;m building a social networking platform designed to transform professional connection and collaboration in the tech space. I thrive on turning complex ideas into seamless digital experiences and am always looking for opportunities to push the boundaries of what web applications can do.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a 
@@ -751,7 +751,7 @@ export default function Portfolio() {
               <div className="text-gray-400">Technologies</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-400 mb-2">1+</div>
+              <div className="text-4xl font-bold text-blue-400 mb-2">3+</div>
               <div className="text-gray-400">Years Experience</div>
             </div>
             <div className="text-center">
