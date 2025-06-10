@@ -585,8 +585,8 @@ export default function Portfolio() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href="/resume/James-Schofield-Aspiring Full Stack Developer Professional.pdf" 
-                  download="James-Schofield-Aspiring Full Stack Developer Professional.pdf"
+                  href="/resume/James-Schofield-Full Stack Developer Professional.pdf" 
+                  download="James-Schofield-Full Stack Developer Professional.pdf"
                   className="inline-flex items-center px-4 py-2 border border-black text-black hover:bg-black hover:text-white transition-colors rounded-full font-medium"
                 >
                   Download Resume
