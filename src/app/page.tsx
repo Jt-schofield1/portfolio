@@ -60,6 +60,18 @@ import { FaRobot, FaServer, FaMobile, FaCode, FaLaptopCode, FaCloud } from "reac
 // Enhanced projects data with James Schofield's actual projects
 const projects = [
   {
+    title: "DLB Elite - Athletic Training Website",
+    description: "A professional Next.js website for DLB Elite athletic training services, specializing in defensive line and linebacker development. Features interactive booking integration with Calendly, responsive design, and modern animations for Camden White's elite training programs.",
+    category: "Business Website",
+    status: "Live",
+    gradient: "from-black to-yellow-600",
+    image: "/images/projects/dlb-elite.png",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    liveLink: "https://dlbelite.com/",
+    githubLink: "https://github.com/Jt-schofield1/dlb-elite",
+    featured: false,
+  },
+  {
     title: "FrenchCreek Canoe Website",
     description: "A business website for French Creek Canoe services, showcasing outdoor adventure offerings with modern web design and user-friendly navigation for booking and information.",
     category: "Business Website",
