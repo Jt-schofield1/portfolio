@@ -60,6 +60,20 @@ import { FaRobot, FaServer, FaMobile, FaCode, FaLaptopCode, FaCloud } from "reac
 // Enhanced projects data with James Schofield's actual projects
 const projects = [
   {
+    title: "Vendor Dashboard - ERA Solutions",
+    description: "A comprehensive vendor management platform built for ERA Solutions, enabling vendor administrators to efficiently manage users, assign exam codes, and oversee certification processes. Features multi-vendor user management, bulk exam code assignment, role-based access control, and real-time dashboard with professional MUI DataGrid.",
+    category: "Enterprise Platform",
+    status: "Private",
+    gradient: "from-blue-600 to-indigo-700",
+    image: "/images/projects/vendor-dashboard.png",
+    technologies: ["Next.js 15", "React 19", "TypeScript 5", "Material-UI 7", "Tailwind CSS", "Prisma 6", "PostgreSQL", "NextAuth.js", "AWS S3"],
+    liveLink: "",
+    githubLink: "",
+    featured: true,
+    isPrivate: true,
+    clientNote: "Vendors Only - Internal Platform"
+  },
+  {
     title: "FlickzWithFitz - Photography Portfolio",
     description: "A modern, responsive photography portfolio website for professional photographer Cameron Fitzsimmons. Features stunning image galleries with lightbox functionality, smooth animations, glass morphism effects, and optimized performance with Next.js Image optimization for seamless user experience.",
     category: "Photography Portfolio",
