@@ -60,6 +60,30 @@ import { FaRobot, FaServer, FaMobile, FaCode, FaLaptopCode, FaCloud } from "reac
 // Enhanced projects data with James Schofield's actual projects
 const projects = [
   {
+    title: "FlickzWithFitz - Photography Portfolio",
+    description: "A modern, responsive photography portfolio website for professional photographer Cameron Fitzsimmons. Features stunning image galleries with lightbox functionality, smooth animations, glass morphism effects, and optimized performance with Next.js Image optimization for seamless user experience.",
+    category: "Photography Portfolio",
+    status: "Live",
+    gradient: "from-purple-600 to-pink-600",
+    image: "/images/projects/flickzwithfitz.png",
+    technologies: ["Next.js 14", "TypeScript", "Tailwind CSS", "Framer Motion", "React Intersection Observer"],
+    liveLink: "https://www.flickzwithfitz.com/",
+    githubLink: "https://github.com/Jt-schofield1/FlickzWithFitz-",
+    featured: false,
+  },
+  {
+    title: "C.L.I.M.B. Athletics - Training Platform",
+    description: "A comprehensive football training website for C.L.I.M.B. Athletics, specializing in elite quarterback and wide receiver development. Features integrated Google Maps for location services, Formspree contact forms, responsive design, and detailed training program showcases for Mike Lowery's coaching services.",
+    category: "Sports Training",
+    status: "Live",
+    gradient: "from-red-600 to-orange-600",
+    image: "/images/projects/climb-athletics.png",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Google Maps API", "Formspree.io"],
+    liveLink: "https://climb-athletics.vercel.app/",
+    githubLink: "https://github.com/Jt-schofield1/ClimbAthletics",
+    featured: false,
+  },
+  {
     title: "DLB Elite - Athletic Training Website",
     description: "A professional Next.js website for DLB Elite athletic training services, specializing in defensive line and linebacker development. Features interactive booking integration with Calendly, responsive design, and modern animations for Camden White's elite training programs.",
     category: "Business Website",
