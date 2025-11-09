@@ -86,6 +86,18 @@ const projects = [
     featured: false,
   },
   {
+    title: "Mesa Marie Photography - Portfolio Website",
+    description: "A professional photography portfolio for NWPA photographer Mesa Marie, specializing in seniors, couples, families, and mini sessions. Features dynamic image galleries with lightbox, glass morphism UI effects, Formspree contact integration, optimized Next.js Image handling, and mobile-first responsive design for stunning visual presentation.",
+    category: "Photography Portfolio",
+    status: "Live",
+    gradient: "from-sky-400 to-blue-500",
+    image: "/images/projects/mesa-photpgraphy.png",
+    technologies: ["Next.js 16", "TypeScript", "Tailwind CSS", "Framer Motion", "Formspree", "Next.js Image"],
+    liveLink: "https://mesamarie-photography.vercel.app/",
+    githubLink: "https://github.com/Jt-schofield1/MesaPhotography",
+    featured: false,
+  },
+  {
     title: "C.L.I.M.B. Athletics - Training Platform",
     description: "A comprehensive football training website for C.L.I.M.B. Athletics, specializing in elite quarterback and wide receiver development. Features integrated Google Maps for location services, Formspree contact forms, responsive design, and detailed training program showcases for Mike Lowery's coaching services.",
     category: "Sports Training",
