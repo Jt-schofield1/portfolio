@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, useRef } from "react";
-import emailjs from '@emailjs/browser';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -400,25 +399,27 @@ export default function Portfolio() {
     setSubmitStatus('idle');
 
     try {
-      // EmailJS configuration - you'll need to replace these with your actual IDs
-      const serviceID = 'YOUR_SERVICE_ID';
-      const templateID = 'YOUR_TEMPLATE_ID';
-      const publicKey = 'YOUR_PUBLIC_KEY';
+      const response = await fetch('https://formspree.io/f/xdkevnkw', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
 
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-        to_email: 'Jamesschofield@peerswipe.online'
-      };
-
-      await emailjs.send(serviceID, templateID, templateParams, publicKey);
-      
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
     } catch (error) {
-      console.error('EmailJS error:', error);
+      console.error('Formspree error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -544,7 +545,7 @@ export default function Portfolio() {
                 
                 {/* Social Links */}
                 <div className="flex space-x-4 pt-8 hero-social">
-                  <a href="mailto:Jamesschofield@peerswipe.online" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors">
+                  <a href="mailto:jamesschofield7789@gmail.com" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors">
                     <Mail className="w-5 h-5" />
                   </a>
                   <a href="https://github.com/Jt-schofield1" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors">
@@ -605,7 +606,7 @@ export default function Portfolio() {
               
               {/* Social Links */}
               <div className="flex justify-center space-x-4 hero-social">
-                <a href="mailto:Jamesschofield@peerswipe.online" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors">
+                <a href="mailto:jamesschofield7789@gmail.com" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors">
                   <Mail className="w-5 h-5" />
                 </a>
                 <a href="https://github.com/Jt-schofield1" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-colors">
@@ -1105,7 +1106,7 @@ export default function Portfolio() {
                   <Mail className="w-6 h-6 text-black" />
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p className="text-gray-600">Jamesschofield@peerswipe.online</p>
+                    <p className="text-gray-600">jamesschofield7789@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -1203,7 +1204,7 @@ export default function Portfolio() {
               <p>&copy; 2024 JT Schofield. All rights reserved.</p>
             </div>
             <div className="flex space-x-4">
-              <a href="mailto:Jamesschofield@peerswipe.online" className="text-gray-300 hover:text-white transition-colors">
+              <a href="mailto:jamesschofield7789@gmail.com" className="text-gray-300 hover:text-white transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
               <a href="https://github.com/Jt-schofield1" className="text-gray-300 hover:text-white transition-colors">
