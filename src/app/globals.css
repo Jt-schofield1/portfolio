@@ -19,10 +19,10 @@
   --blue: #2e6cff;
   --green: #3ea168;
 
-  --sans: "Geist", "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-  --display: "Geist", "Inter", -apple-system, sans-serif;
-  --serif: "Instrument Serif", "Cormorant Garamond", Georgia, serif;
-  --mono: "Geist Mono", "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --sans: var(--font-geist), "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  --display: var(--font-geist), "Inter", -apple-system, sans-serif;
+  --serif: var(--font-instrument-serif), "Cormorant Garamond", Georgia, serif;
+  --mono: var(--font-geist-mono), "JetBrains Mono", ui-monospace, Menlo, monospace;
 
   --radius-sm: 8px;
   --radius: 14px;
