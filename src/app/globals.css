@@ -686,7 +686,6 @@ footer .right { display: flex; gap: 20px; }
     max-height: 320px;
     gap: 10px;
     overflow-y: auto;
-    scroll-behavior: smooth;
   }
   .msg .bubble { font-size: 13.5px; max-width: 82%; padding: 8px 12px; }
 }
