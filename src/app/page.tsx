@@ -941,12 +941,12 @@ export default function Page() {
           </a>
           <a
             className="contact-row"
-            href="https://linkedin.com/in/jamesschofield"
+            href="https://www.linkedin.com/in/james-schofield1/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span className="k">LinkedIn</span>
-            <span className="v">linkedin.com/in/jamesschofield</span>
+            <span className="v">linkedin.com/in/james-schofield1</span>
             <span className="arrow">→</span>
           </a>
           <a className="contact-row" href="https://jamesschofield.com">
