@@ -429,17 +429,23 @@ export default function Page() {
         }</div>
       `;
       body.appendChild(row);
+      const scrollToEnd = () => {
+        body.scrollTop = body.scrollHeight;
+      };
+      scrollToEnd();
       const target = row.querySelector(".typetext") as HTMLElement | null;
       const cursor = row.querySelector(".cursor") as HTMLElement | null;
       if (!target) return;
       if (s.who === "user") {
         target.textContent = s.text;
+        scrollToEnd();
         nextTimer = setTimeout(addNext, 600);
       } else {
         let i = 0;
         const speed = 18;
         typeTimer = setInterval(() => {
           target.textContent = s.text.slice(0, ++i);
+          scrollToEnd();
           if (i >= s.text.length) {
             if (typeTimer) clearInterval(typeTimer);
             typeTimer = null;

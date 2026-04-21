@@ -680,6 +680,13 @@ footer .right { display: flex; gap: 20px; }
     text-overflow: ellipsis;
     min-width: 0;
   }
-  .chat-body { padding: 14px; min-height: 0; gap: 10px; }
+  .chat-body {
+    padding: 14px;
+    min-height: 0;
+    max-height: 320px;
+    gap: 10px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
   .msg .bubble { font-size: 13.5px; max-width: 82%; padding: 8px 12px; }
 }
