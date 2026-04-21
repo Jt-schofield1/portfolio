@@ -131,7 +131,7 @@ const DATA: {
     {
       num: "05",
       name: "Thirty-eight more.",
-      client: "github.com/jamesschofield",
+      client: "github.com/Jt-schofield1",
       tags: ["OSS", "Experiments", "Teaching"],
       desc: "A rolling archive of side quests, production forks, course material for the React students I mentor, and self-hosted LLM infra. Explore the full catalog on GitHub.",
       visual: "constellation",
@@ -558,7 +558,7 @@ export default function Page() {
       <header className="hero" id="top" data-screen-label="01 Hero">
         <a href="#work" className="hero-eyebrow">
           <span className="dot"></span>
-          <span>New case study — Titanium Dolphin</span>
+          <span>Open to work · Tampa, FL</span>
           <span className="arrow">→</span>
         </a>
 
@@ -760,9 +760,6 @@ export default function Page() {
                     </span>
                   ))}
                 </div>
-                <a href="#contact" className="btn btn-secondary">
-                  Read case study →
-                </a>
               </div>
               <div className="project-image">
                 <ProjectVisual kind={p.visual} />
@@ -896,7 +893,12 @@ export default function Page() {
             <a href="mailto:jamesschofield7789@gmail.com" className="btn btn-primary">
               Email James
             </a>
-            <a href="https://github.com/jamesschofield" className="btn btn-secondary">
+            <a
+              href="https://github.com/Jt-schofield1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary"
+            >
               See code
             </a>
           </div>
@@ -927,12 +929,22 @@ export default function Page() {
             <span className="v">Tampa, FL</span>
             <span className="arrow">●</span>
           </div>
-          <a className="contact-row" href="https://github.com/jamesschofield">
+          <a
+            className="contact-row"
+            href="https://github.com/Jt-schofield1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="k">GitHub</span>
-            <span className="v">github.com/jamesschofield</span>
+            <span className="v">github.com/Jt-schofield1</span>
             <span className="arrow">→</span>
           </a>
-          <a className="contact-row" href="https://linkedin.com/in/jamesschofield">
+          <a
+            className="contact-row"
+            href="https://linkedin.com/in/jamesschofield"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="k">LinkedIn</span>
             <span className="v">linkedin.com/in/jamesschofield</span>
             <span className="arrow">→</span>
