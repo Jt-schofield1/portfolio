@@ -21,7 +21,7 @@ const swap: Variants = {
 };
 
 const blank =
-  "mx-1 inline-block max-w-full rounded-none border-0 border-b-[3px] border-paper/50 bg-transparent px-1 pb-0.5 font-extrabold text-paper placeholder:font-semibold placeholder:text-paper/45 focus:border-paper";
+  "mx-1 inline-block max-w-full max-sm:mx-0 max-sm:my-1 max-sm:block max-sm:!w-full rounded-none border-0 border-b-[3px] border-paper/50 bg-transparent px-1 pb-0.5 font-extrabold text-paper placeholder:font-semibold placeholder:text-paper/45 focus:border-paper";
 
 function Blank({
   name,
@@ -129,16 +129,16 @@ export function Contact() {
             ) : (
               <motion.form key="form" variants={swap} initial="hidden" animate="show" exit="exit" onSubmit={submit}>
                 <p className="kicker mb-8">Fill in the blanks</p>
-                <p className="max-w-6xl text-[clamp(24px,3.3vw,46px)] font-medium leading-[1.55] tracking-tight">
+                <p className="max-w-6xl text-[clamp(22px,3.3vw,46px)] font-medium leading-[1.5] tracking-tight sm:leading-[1.55]">
                   Hi James. My name is
                   <Blank name="name" label="Your name" placeholder="your name" value={f.name} onChange={set("name")} required autoComplete="name" />
                   and I am with
                   <Blank name="company" label="Company or organization" placeholder="company" value={f.company} onChange={set("company")} autoComplete="organization" />
-                  . I am reaching out about
+                  <span className="max-sm:hidden">. </span>I am reaching out about
                   <Pick name="reason" label="What this is about" options={reasons} value={f.reason} onChange={set("reason")} />
                   and the timing is
                   <Pick name="timeline" label="Timeline" options={timelines} value={f.timeline} onChange={set("timeline")} />
-                  . The work
+                  <span className="max-sm:hidden">. </span>The work
                   <Pick name="clearance" label="Clearance requirement" options={clearances} value={f.clearance} onChange={set("clearance")} />
                   a clearance. You can reach me at
                   <Blank name="email" label="Your email" placeholder="you@company.com" type="email" value={f.email} onChange={set("email")} required autoComplete="email" />

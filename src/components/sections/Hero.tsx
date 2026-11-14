@@ -22,10 +22,11 @@ const swap: Variants = {
 
 function Digit({ char, dir }: { char: string; dir: number }) {
   return (
-    <span className="relative inline-block overflow-hidden align-bottom">
+    // Padding widens the clip box past the glyph's advance width; the negative margin pulls the digits back together.
+    <span className="relative -mx-[0.065em] inline-block overflow-hidden px-[0.03em] align-bottom">
       <span className="invisible">{char}</span>
       <AnimatePresence initial={false} custom={dir}>
-        <motion.span key={char} custom={dir} variants={roll} initial="enter" animate="center" exit="exit" className="absolute inset-0">
+        <motion.span key={char} custom={dir} variants={roll} initial="enter" animate="center" exit="exit" className="absolute inset-y-0 left-[0.03em]">
           {char}
         </motion.span>
       </AnimatePresence>
@@ -69,23 +70,23 @@ export function Hero() {
         {person.name}. Age {person.age}. Senior Full Stack Engineer, technical lead, and co-founder of two companies.
       </h1>
 
-      <div className="kicker flex flex-wrap justify-between gap-x-8 gap-y-2 text-mute">
+      <div className="kicker flex justify-between gap-x-8 text-mute">
         <span>{person.location}</span>
-        <span>Senior Full Stack Engineer · Co-founder · U.S. Navy Reserve</span>
+        <span className="hidden md:inline">Senior Full Stack Engineer · Co-founder · U.S. Navy Reserve</span>
         <span>TS/SCI</span>
       </div>
 
       <div className="mt-6 grid items-end gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] lg:gap-10">
         <div
           aria-hidden
-          className="-ml-[0.04em] select-none text-[clamp(190px,34vw,520px)] font-black leading-[0.8] tracking-[-0.075em] text-cobalt [font-variant-numeric:tabular-nums]"
+          className="select-none text-[clamp(190px,34vw,520px)] font-black leading-[0.8] text-cobalt [font-variant-numeric:tabular-nums]"
         >
           {digits.map((c, i) => (
             <Digit key={i} char={c} dir={dir} />
           ))}
         </div>
 
-        <div aria-live="polite" className="min-h-[250px] pb-2 lg:min-h-[340px]">
+        <div aria-live="polite" className="min-h-[230px] pb-2 lg:min-h-[340px]">
           <AnimatePresence mode="wait" initial={false}>
             <motion.div key={stop.age} variants={swap} initial="enter" animate="center" exit="exit">
               <p className="kicker text-cobalt">

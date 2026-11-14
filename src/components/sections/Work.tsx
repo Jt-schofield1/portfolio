@@ -200,7 +200,7 @@ export function Work() {
               onClick={() => openCase(w.id)}
               style={{ borderRadius: 6 }}
               aria-haspopup="dialog"
-              className="on-ink group flex min-h-[420px] w-full flex-col justify-between p-6 text-left text-paper"
+              className="on-ink group flex min-h-[340px] w-full flex-col justify-between p-6 sm:min-h-[420px] text-left text-paper"
             >
               <span className="flex w-full items-start justify-between">
                 <span className="kicker">
@@ -210,7 +210,7 @@ export function Work() {
                   <Plus size={16} aria-hidden />
                 </motion.span>
               </span>
-              <Visual kind={w.visual} className="mx-auto my-4 w-full max-w-[240px] opacity-90" />
+              <Visual kind={w.visual} className="mx-auto my-3 w-full max-w-[170px] opacity-90 sm:my-4 sm:max-w-[240px]" />
               <span>
                 <span className="display block text-[clamp(28px,2.4vw,38px)]">{w.name}</span>
                 <span className="mt-3 block text-[15px] leading-snug text-paper/75">{w.blurb}</span>

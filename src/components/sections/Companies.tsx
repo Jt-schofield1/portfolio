@@ -49,7 +49,7 @@ export function Companies() {
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-12">
           {companies.map((c) => (
             <Reveal key={c.name}>
-              <motion.p variants={rise} className="kicker text-cobalt [filter:brightness(1.7)]">
+              <motion.p variants={rise} className="kicker text-[#8f99ff]">
                 {c.role}
               </motion.p>
               <motion.h3 variants={rise} className="display mt-4 text-[clamp(40px,5.4vw,84px)]">

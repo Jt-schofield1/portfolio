@@ -27,7 +27,14 @@ const rowClass =
 function RowBody({ r }: { r: Row }) {
   return (
     <>
-      <span className="text-xl font-extrabold tracking-tight md:text-2xl">{r.name}</span>
+      <span className="flex items-center gap-3 text-xl font-extrabold tracking-tight md:text-2xl">
+        {r.img && (
+          <span className="relative h-10 w-16 shrink-0 overflow-hidden rounded-sm bg-ink/10 md:hidden">
+            <Image src={r.img} alt="" fill sizes="64px" className="object-cover object-top" />
+          </span>
+        )}
+        {r.name}
+      </span>
       <span className="col-span-2 text-[15px] leading-snug text-mute md:col-span-1">{r.type}</span>
       <span className="kicker row-start-1 col-start-2 text-mute md:col-start-3">{r.year}</span>
       <span className="hidden md:block">{r.url && <ArrowUpRight size={20} aria-hidden className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />}</span>
